@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Flip Card Matching Game</h1>
+
+        <div class="game-modes">
+            <button class="mode-btn" id="easy">Easy</button>
+            <button class="mode-btn" id="hard">Hard</button>
+            <button class="mode-btn" id="extreme">Extreme</button>
+            <button class="mode-btn" id="timer">Timer Mode (Hard)</button>
+            <button class="mode-btn" id="multiplayer">Multiplayer</button>
+        </div>
+
+        <div class="grid-container">
+            <!-- Cards will go here -->
+        </div>
+
+        <div class="info">
+            <p>Moves: <span id="move-count">0</span></p>
+            <p>Time: <span id="timer-display">00:00</span></p>
+        </div>
+
+        <!-- Play Again Button -->
+        <button id="play-again" style="display:none;">Play Again</button>
+
+        <!-- Play Music Button -->
+        <button id="play-music" style="display:none;">Play Music</button>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="bg-music" src="bg-music.mp3" loop></audio>
+    <audio id="flip-sound" src="flip.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="loss-sound" src="loss.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="match-sound" src="match.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
